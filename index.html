@@ -178,9 +178,9 @@ footer {
                     let charCode = char.charCodeAt(0);
                     let base = isUpperCase ? 'A'.charCodeAt(0) : 'a'.charCodeAt(0);
 
-                    if (direction === "L") {
+                    if (direction === "R") {
                         charCode = (charCode - base - shift + 26) % 26 + base;
-                    } else if (direction === "R") {
+                    } else if (direction === "L") {
                         charCode = (charCode - base + shift) % 26 + base;
                     }
 
@@ -206,9 +206,9 @@ footer {
                     let charCode = char.charCodeAt(0);
                     let base = isUpperCase ? 'A'.charCodeAt(0) : 'a'.charCodeAt(0);
 
-                    if (direction === "L") {
+                    if (direction === "R") {
                         charCode = (charCode - base + shift + 26) % 26 + base;
-                    } else if (direction === "R") {
+                    } else if (direction === "L") {
                         charCode = (charCode - base - shift) % 26 + base;
                     }
 
